@@ -44,6 +44,7 @@ def form(request):
 
     return render(request,"form.html")
 
+
 def form1(request):
     if request.method=="POST":
         if request.POST.get("name1") and request.POST.get("name2"):
