@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Calculator</h3>
+<form method="POST">
+    {% csrf_token %}
+  <label>ENTER THE FIRST NUMBER =</label>
+    <input type="text" name="num1" />
+  <label>Enter the second number= </label>
+    <input type="text" name="num2" />
+  <button type="submitt" name="add">Add</button>
+
+</form>
+<h3>The Resul  is=</h3>
+<h4>{{OUTPUT}}</h4>
+
+</body>
+</html>
